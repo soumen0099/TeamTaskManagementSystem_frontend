@@ -1,0 +1,303 @@
+.profile-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Sidebar Card */
+.profile-sidebar-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.profile-avatar-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--primary), #a855f7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
+  border: 4px solid var(--bg-secondary);
+  overflow: hidden;
+}
+
+.profile-avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-file-input {
+  display: none;
+}
+
+.profile-avatar-upload-btn {
+  min-height: 38px;
+}
+
+.profile-card-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.profile-card-role {
+  padding: 0.25rem 0.75rem;
+}
+
+.profile-card-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 0.5rem 0;
+}
+
+.profile-card-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.profile-detail-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-align: left;
+}
+
+.detail-row-icon {
+  color: var(--text-muted);
+}
+
+.detail-row-text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.row-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.row-val {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Details Settings Hub */
+.profile-details-hub {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.hub-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hub-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hub-card-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* ID Security Field */
+.profile-id-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.id-field-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  overflow: hidden;
+}
+
+.id-field-lbl {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.id-field-val {
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 700;
+  font-family: var(--mono);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.btn-icon-copy {
+  width: 2.2rem;
+  height: 2.2rem;
+  padding: 0;
+}
+
+/* Skillset Tag Manager */
+.skill-input-bar {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 400px;
+}
+
+.skill-input {
+  flex-grow: 1;
+}
+
+.skill-submit {
+  height: 2.7rem;
+}
+
+.skills-badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.no-skills-tip {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.skill-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  border: 1px solid var(--border-color);
+}
+
+.btn-delete-skill {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  padding: 0.1rem;
+}
+
+.btn-delete-skill:hover {
+  color: var(--danger);
+}
+
+/* Teams row in profile */
+.profile-teams-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.profile-team-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.team-row-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.team-row-id {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: var(--mono);
+}
+
+@media (max-width: 768px) {
+  .profile-sidebar-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .profile-id-field {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .skill-input-bar {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .id-field-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+
+  .id-field-val {
+    max-width: 100%;
+  }
+
+  .skill-input-bar {
+    flex-direction: column;
+  }
+
+  .skill-submit {
+    width: 100%;
+  }
+
+  .profile-team-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+}
