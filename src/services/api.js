@@ -1,4 +1,4 @@
-const BASE_URL = '/api';
+const BASE_URL = `${import.meta.env.VITE_API_TARGET}/api`;
 
 /**
  * Helper to fetch token from localStorage
