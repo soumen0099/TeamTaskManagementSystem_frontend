@@ -1,4 +1,4 @@
-const BASE_URL = `${import.meta.env.VITE_API_TARGET}/api`;
+const BASE_URL = `${import.meta.env.VITE_API_TARGET || import.meta.env.VITE_API_URL || 'http://16.192.61.193:8800'}/api`;
 
 /**
  * Helper to fetch token from localStorage
